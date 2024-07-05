@@ -1,0 +1,1 @@
+add_executable(stream_custom_output main.cpp)
