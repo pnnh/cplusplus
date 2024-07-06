@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 22,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "Windows",
+      "generator": "Visual Studio 17 2022",
+      "binaryDir": "${sourceDir}/build/windows",
+      "toolchainFile": "$env{VCPKG_ROOT}\\scripts\\buildsystems\\vcpkg.cmake",
+      "installDir": "${sourceDir}/install",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "VCPKG_TARGET_TRIPLET": "x64-windows"
+      }
+    }
+  ]
+}
