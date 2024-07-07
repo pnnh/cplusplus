@@ -1,0 +1,1 @@
+add_executable(namespace_inline main.cpp)

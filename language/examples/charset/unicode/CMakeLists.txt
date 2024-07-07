@@ -1,0 +1,1 @@
+add_executable(charset_unicode main.cpp)
