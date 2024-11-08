@@ -1,0 +1,32 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+      "major": 3,
+      "minor": 28,
+      "patch": 0
+    },
+    "configurePresets": [
+      {
+        "name": "macos",
+        "displayName": "macOS Config",
+        "generator": "Ninja",
+        "binaryDir": "${sourceDir}/build/macos",
+        "cacheVariables": {
+          "CMAKE_BUILD_TYPE": "Debug",
+          "CMAKE_OSX_ARCHITECTURES": "arm64",
+          "CMAKE_OSX_DEPLOYMENT_TARGET": "14.0", 
+          "CMAKE_EXPORT_COMPILE_COMMANDS": "YES",
+            "CMAKE_C_COMPILER": "/opt/homebrew/opt/llvm/bin/clang",
+            "CMAKE_CXX_COMPILER": "/opt/homebrew/opt/llvm/bin/clang++"
+        },
+        "environment": {}
+      }
+    ],
+    "buildPresets": [ 
+      {
+        "name": "macos",
+        "configurePreset": "macos",
+        "jobs": 8
+      }
+    ]
+  }
