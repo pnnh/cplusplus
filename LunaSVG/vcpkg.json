@@ -1,0 +1,8 @@
+{
+  "name": "lunasvgexample",
+  "description": "A simple example project using the LunaSVG library",
+  "version": "0.1.0",
+  "dependencies": [
+    "lunasvg"
+  ]
+}
