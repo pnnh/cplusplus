@@ -1,1 +1,0 @@
-add_executable(algorithm_adjacent_find main.cpp)

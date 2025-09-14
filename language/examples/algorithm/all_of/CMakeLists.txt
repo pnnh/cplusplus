@@ -1,1 +1,0 @@
-add_executable(algorithm_all_of main.cpp)
